@@ -15,7 +15,7 @@ public class begin4 {
         // it allows to receive an input from the user
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Aylananing diametri(butun son)ni kiriting: ");
+        System.out.print("Aylananing diametri(butun son) d ni kiriting: ");
         int d = sc.nextInt();
 
         float L = 3.14f * d;
