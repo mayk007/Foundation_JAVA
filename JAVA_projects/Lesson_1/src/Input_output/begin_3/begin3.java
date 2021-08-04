@@ -30,8 +30,6 @@ public class begin3 {
 
         System.out.println("To'rtburchak yuzasi:" + S + "\nTo'rtburchak Perimetri: " + P);
 
-
-
     }
 }
 
