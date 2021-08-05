@@ -10,7 +10,7 @@ public class begin29 {
         System.out.print("a=");
         int a = sc.nextInt();
 
-        final float Pi = 3.14159265359f;
+        final double Pi = Math.PI;
 
         double a_rad = a * Pi/180;
 
