@@ -18,7 +18,7 @@ public class begin35 {
         // Daryo oqimi bo'yicha yurilgan yo'l
         double S1 = T1 * (V + U);
         // Daryo oqimiga qarshi yurilgan yo'l
-        double S2 = T1 * (V - U);
+        double S2 = T2 * (V - U);
         // Qayiqning umumiy  yurgan yo'li
         double S = S1 + S2;
 
