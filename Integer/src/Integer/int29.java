@@ -8,27 +8,19 @@ public class int29 {
 
         int A, B, C, S1, S2, D, S3;
 
-        System.out.println("A=");
+        System.out.print("A=");
         A = sc.nextInt();
-        System.out.println("B=");
+        System.out.print("B=");
         B = sc.nextInt();
-        System.out.println("C=");
+        System.out.print("C=");
         C = sc.nextInt();
 
-        // tomonlari A B bo'lgan to'gri to'rtburchaking yuzi
-        S1 = A * B;
-        // kvadratning yuzi
-        S2 = C * C;
-        // to'gri to'rtburchakka eng ko'p joylashgan Kv soni 
-        D = S1 / S2;
+        // to'gri to'rtburchakka eng ko'p joylashgan Kv soni
+        S1 = (A / C) * (B / C);
         // Kv ning joylashmay qolga  qismi yuzasi
-        S3 = S1 % S2;
+        S2 = (A * B) - S1 * C * C;
 
-        System.out.printf("tomonlari A B bo'lgan to'gri to'rtburchaking yuzi: %d", S1);
-        System.out.printf("\nKvadratning yuzi: %d", S2);
-        System.out.printf("\nTo'gri to'rtburchakka eng ko'p joylashgan Kv soni: %d", D);
-        System.out.printf("\n Kv ning joylashmay qolga  qismi yuzasi: %d", S3);
-
-
+        System.out.printf("\nTomonlari %d ga %d to'gri to'rtburchakka eng ko'p joylashgan Kv soni: %d", A, B, S1);
+        System.out.printf("\nKv ning joylashmay qolga  qismi yuzasi %d ga teng.", S2);
     }
 }
