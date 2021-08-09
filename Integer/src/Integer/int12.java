@@ -2,7 +2,7 @@ package Integer;
 
 import java.util.Scanner;
 
-public class int11{
+public class int12{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -12,9 +12,9 @@ public class int11{
         int bir = A % 10;
         int on = (A % 100) / 10;
         int yuz = A / 100;
-        int sumaary = bir + on + yuz;
+        int summary = (bir * 100) + (on*10) + yuz;
 
-        System.out.printf("kiritilgan son: %d \nyig'indi: %d", A, sumaary);
+        System.out.printf("kiritilgan son: %d \nteskari son: %d", A, summary);
 
 
     }

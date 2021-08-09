@@ -12,11 +12,9 @@ public class int10{
         int bir ,on, temp;
 
         bir = A % 10;
-        temp = A - bir;
+        on = (A % 100)/10;
 
-
-
-        System.out.printf("%d sonida %n%d ta birlik va %n%d ta o'nlik bor.", A, bir, on);
+        System.out.printf("birliklar %d %no'nliklar %d ", bir, on);
 
 
     }

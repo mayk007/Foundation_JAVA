@@ -11,8 +11,9 @@ public class int8{
 
         int onlikar = A / 10;
         int birliklar = A % 10;
+        int teskari = onlikar + birliklar *10;
 
-        System.out.printf("teskari raqam: %d%d", birliklar, onlikar);
+        System.out.printf("teskari raqam: %d", teskari);
 
 
     }
