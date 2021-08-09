@@ -9,7 +9,7 @@ public class int30 {
         System.out.print("yilni kiriting:  ");
         int a = sc.nextInt();
 
-        int b = a / 100;
+        int b = a / 100 + 1;
         System.out.printf("%d yil %d yillikka kiradi!", a, b);
 
     }
