@@ -13,7 +13,16 @@ public class boolean32 {
         System.out.print("c= ");
         int c = sc.nextInt();
 
-        boolean D = (a * a + b * b) == c * c || (a * a + c * c) == b * b || a * a == (b * b + c * c);
+        // 1-usul
+//        boolean D = (a * a + b * b) == c * c || (a * a + c * c) == b * b || a * a == (b * b + c * c);
+
+        // 2-usul
+        double a2, b2, c2;
+        a2 = Math.pow(a, 2);
+        b2 = Math.pow(b, 2);
+        c2 = Math.pow(c, 2);
+
+        boolean D = (a2 + b2) == c2 || (a2 + c2) == b2 || (b2 + c2) == a2;
 
         System.out.println(D);
 

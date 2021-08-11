@@ -6,21 +6,12 @@ public class boolean34 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("A= ");
-        int A = sc.nextInt();
-        System.out.print("B= ");
-        int B = sc.nextInt();
-        System.out.print("C= ");
-        int C = sc.nextInt();
+        System.out.print("(1 <= x <= 8), x= ");
+        int x = sc.nextInt();
+        System.out.print("(1 <= y <= 8), y= ");
+        int y = sc.nextInt();
 
-        // 1-usul
-//        double ab = Math.abs(A - B);
-//        double ac = Math.abs(A - C);
-//        double bc = Math.abs(B - C);
-//        boolean D = ab == ac && ab == bc;
-
-        // 2-usul
-        boolean D = (A == B && B == C);
+        boolean D = (x + y) % 2 != 0;
 
         System.out.println(D);
 

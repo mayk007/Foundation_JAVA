@@ -13,7 +13,10 @@ public class boolean19 {
         System.out.print("(C>0) C= ");
         int C = sc.nextInt();
 
-        boolean D = (A == -B) || (-A == C) || (B == -C) || (-A == B) || (A == -C) || (-B == C);
+       // boolean D = (A == -B) || (-A == C) || (B == -C) || (-A == B) || (A == -C) || (-B == C);
+
+        // 2-usul
+        boolean D = A + B == 0 || A + C == 0 || B + C == 0;
 
         System.out.println(D);
 

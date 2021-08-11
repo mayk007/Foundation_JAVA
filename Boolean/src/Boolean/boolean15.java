@@ -13,7 +13,7 @@ public class boolean15 {
         System.out.print("C=");
         int C = sc.nextInt();
 
-        boolean D = A > 0 && B > 0 && C <= 0 || A > 0 && B <= 0 && C > 0 || A <= 0 && B > 0 && C > 0;
+        boolean D = A > 0 && B > 0 && C <= 0 || A > 0 && C > 0 && B <= 0 ||B > 0 && C > 0 && A <= 0;
 
         System.out.println(D);
 

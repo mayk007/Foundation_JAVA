@@ -20,10 +20,10 @@ public class boolean29 {
         System.out.print("y2 = ");
         y2 = sc.nextInt();
 
-        boolean D = x1 < x && y < y1 && x < x2 && y > y2;
+//        boolean D = x1 < x && y < y1 && x < x2 && y > y2;
+        boolean D = (x1 < x && x < x2) && (y2 < y && y < y1);
 
         System.out.println(D);
-
 
     }
 }

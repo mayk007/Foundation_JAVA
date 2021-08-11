@@ -13,16 +13,14 @@ public class boolean33 {
         System.out.print("C= ");
         int C = sc.nextInt();
 
-        // 1-usul
-//        double ab = Math.abs(A - B);
-//        double ac = Math.abs(A - C);
-//        double bc = Math.abs(B - C);
-//        boolean D = ab == ac && ab == bc;
+        // Uchburchak har tomonining uzunligi qolgan ikki tomon uzunliklari yig'indisidan kichik, ayirmasidan esa kattadir.
 
-        // 2-usul
-        boolean D = (A == B && B == C);
+        // 1-usul
+//        boolean D = (A + B > C && A - B < C || A + B > C && B - A < C) || (A + C > B && A - C < B || A + C > B && C - A < B) || (B + C > A && B - C < A || B + C > A && C - B < A);
+
+        //2-usul(optimized)
+        boolean D = A + B > C && Math.abs(A - B) < C || A + C > B && Math.abs(A - C) < B || B + C > A && Math.abs(B- C) < A;
 
         System.out.println(D);
-
     }
 }
