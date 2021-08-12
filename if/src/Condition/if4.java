@@ -13,8 +13,7 @@ public class if4 {
         int b = sc.nextInt();
         System.out.print("c= ");
         int c = sc.nextInt();
-/*
-        // 1-usul
+
         if (a > 0 && b > 0 && c > 0) {
             System.out.println("3");
         } else if (a > 0 && b > 0 || b > 0 && c > 0 || a > 0 && c > 0) {
@@ -24,10 +23,6 @@ public class if4 {
         } else {
             System.out.println("Musbat son kiritilmadi!");
         }
-
- */
-        // 2-usul
-        
 
     }
 }

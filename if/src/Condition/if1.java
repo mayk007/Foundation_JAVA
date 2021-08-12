@@ -10,13 +10,14 @@ public class if1 {
 
         System.out.println("A= ");
         int A = sc.nextInt();
-/*
-        if (A > 0){
-            System.out.println(++A);
-        } else {
-            System.out.println(A);
-        }
-*/
+        // 1-usul
+//        if (A > 0){
+//            System.out.println(++A);
+//        } else {
+//            System.out.println(A);
+//        }
+
+        // 2-usul
         int B = A > 0 ? (++A) : A;
 
         System.out.print(B);

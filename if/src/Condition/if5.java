@@ -34,9 +34,9 @@ public class if5 {
         }
 */
         // 2 -usul
-        double A = (a > 0) ? (count_musbat+= 1):( count_manfiy += 1);
-        double B = (b > 0) ? (count_musbat+= 1):( count_manfiy += 1);
-        double C = (c > 0) ? (count_musbat+= 1):( count_manfiy += 1);
+        int A = (a > 0) ? (count_musbat+= 1):( count_manfiy += 1);
+        int B = (b > 0) ? (count_musbat+= 1):( count_manfiy += 1);
+        int C = (c > 0) ? (count_musbat+= 1):( count_manfiy += 1);
 
         System.out.println("Musbat sonlar: " + count_musbat);
         System.out.println("Manfiy sonlar: " + count_manfiy);
