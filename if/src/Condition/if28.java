@@ -10,9 +10,9 @@ public class if28 {
         System.out.print("Yilni kiriting: ");
         int Y = sc.nextInt();
 
-        if (Y > 0 && Y <= 100 && Y % 4 ==0){
+        if (Y > 0 && Y < 100 && Y % 4 ==0){
             System.out.println("Kabisa yili: " + 366 + " kun!");
-        } else if (Y > 100 && Y % 400 == 0) {
+        } else if (Y >= 100 && Y % 400 == 0) {
             System.out.println("Kabisa yili: " + 366 + " kun!");
         } else {
             System.out.println("Kabisa yili emas: " + 365 + " kun!");
