@@ -10,17 +10,15 @@ public class case8 {
         int D, M, Y;
         System.out.print("(D>=1 && D <= 31), D: ");
         D = sc.nextInt();
-        System.out.print("(D>=1 && D <= 12), M: ");
+        System.out.print("(M>=1 && M <= 12), M: ");
         M = sc.nextInt();
         System.out.print("Kabissa bo'lmagan yilni kiriting: ");
         Y = sc.nextInt();
 
         int kabisa = 0;
         // kiritilgan yil Kabisa yilmi yoki yo'q aniqlab olamiz
-        if (Y >= 1 && Y <= 99 && Y % 4 != 0) {
+        if (Y % 4 != 0 && Y % 100 != 0 || Y % 400 == 0) {
             kabisa += 1;
-        } else if  (Y >= 100 && Y % 400 != 0){
-            kabisa +=2;
         }
 
 
@@ -29,7 +27,7 @@ public class case8 {
                 System.out.println("Kiritilgan yil Kabisa yiliga to'g'ri keladi.\n" +
                         "Iltimos yilni qaytadan kiriting!");
             }
-            case 1, 2 -> {
+            case 1 -> {
                 switch (M) {
                     case 1 -> {
                         if (D >= 1 && D <= 31) {
