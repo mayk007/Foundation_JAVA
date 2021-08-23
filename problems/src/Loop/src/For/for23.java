@@ -10,7 +10,7 @@ public class for23 {
         System.out.print("(n>0), n= ");
         int n = in.nextInt();
         System.out.print("x= ");
-        double x = in.nextInt();
+        double x = in.nextDouble();
 
         int ishora = 1;
         double X = 1;

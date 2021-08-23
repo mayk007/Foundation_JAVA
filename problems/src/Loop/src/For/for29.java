@@ -15,13 +15,10 @@ public class for29 {
         int n = in.nextInt();
 
         double sum = Math.abs(A-B)/n;
-        for (double i = A; i <=B; i+=n) {
+        for (double i = A; i <=B; i+=sum) {
 
             System.out.println(i);
-
-            }
-
         }
-
     }
+}
 

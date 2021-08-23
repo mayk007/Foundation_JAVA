@@ -10,7 +10,7 @@ public class for22 {
         System.out.print("(n>0), n= ");
         int n = in.nextInt();
         System.out.print("x= ");
-        double x = in.nextInt();
+        double x = in.nextDouble();
 
         double X = 1;
         int factorial = 1;
