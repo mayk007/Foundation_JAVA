@@ -18,16 +18,21 @@ public class for27 {
             double mahraj = 1;
             double surat = 1;
 
+            // suratda toq sonlar keladi
             for (int k=1; k<=2*i-1; k+=2){
                 surat *= k;
             }
-
+            // mahrajda 2 ga karrali juft sonlar keladi
             for (int j = 2; j <= 2*i; j+=2){
                 mahraj *= j;
             }
+            //surat darajasini hisoblash
             double y = Math.pow(x,2*i+1);
-            System.out.println(y);
+
+            // mahraj keyingi ifoda
             mahraj *= (2*i+1);
+
+            // oxirgi yig;uindini hisoblash
             Sum += surat*y/mahraj;
             System.out.println(Sum);
         }

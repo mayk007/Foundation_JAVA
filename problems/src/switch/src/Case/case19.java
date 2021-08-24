@@ -7,7 +7,7 @@ public class case19 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Yilni  kiriting: ");
+        System.out.print("Yilni  kiriting (Y>1984): ");
         int Y = sc.nextInt();
 
         int Rang = (Y - 1984) % 5;
@@ -21,8 +21,7 @@ public class case19 {
             case 2: S += "Sariq- "; break;
             case 3: S += "Oq- "; break;
             case 4: S += "Qora- "; break;
-            default:
-                System.out.println("yilni to'gri kiriting!");
+
         }
         switch (Muchal){
             case 0:System.out.println(S += "Sichqon!"); break;
@@ -38,7 +37,7 @@ public class case19 {
             case 10:System.out.println(S += "It!"); break;
             case 11:System.out.println(S += "To'ng'iz!"); break;
 
-            default: System.out.println("yilni to'gri kiriting!");
+            default: System.out.println("Yilni to'gri kiriting!");
         }
     }
 }
