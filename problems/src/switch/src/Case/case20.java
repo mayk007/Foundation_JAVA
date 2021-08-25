@@ -13,7 +13,6 @@ public class case20 {
         System.out.print("(M>=1 && M <= 12), M: ");
         M = sc.nextInt();
 
-
         switch (M) {
             case 1 -> {
                 if (D >= 1 && D <= 31) {
