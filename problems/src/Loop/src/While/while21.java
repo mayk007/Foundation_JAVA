@@ -2,7 +2,7 @@ package Loop.src.While;
 
 import java.util.Scanner;
 
-public class while20 {
+public class while21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,13 +15,13 @@ public class while20 {
 
             i = n % 10;
             n = n / 10;
-            if (i == 2) {
-                System.out.println("Raqamlar orasida 2 raqami bor!");
+            if (i % 2 !=0) {
+                System.out.println("Raqamlar orasida toq son bor!");
                 break;
             }
 
-        } if (i != 2) {
-            System.out.println("Raqamlar orasida 2 raqami yo'q!");
+        } if (i % 2 ==0) {
+            System.out.println("Raqamlar orasida toq son yo'q!");
         }
     }
 }
