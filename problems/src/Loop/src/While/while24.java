@@ -13,7 +13,7 @@ public class while24 {
 
         while (i < n) {
 
-            Fk += F1 + F2;
+            Fk = F1 + F2;
             F1 = Fk - F1;
             F2 = Fk;
             i++;
