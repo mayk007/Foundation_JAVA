@@ -14,7 +14,6 @@ public class Fun2 {
 
     }
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -33,15 +32,10 @@ public class Fun2 {
         System.out.print("E = ");
         int E = sc.nextInt();
 
-
-
         System.out.print("A(2,3,4) = ");  PowerA234(A);
         System.out.print("B(2,3,4) = ");  PowerA234(B);
-        System.out.print("B(2,3,4) = ");  PowerA234(C);
-        System.out.print("B(2,3,4) = ");  PowerA234(D);
-        System.out.print("B(2,3,4) = ");  PowerA234(E);
-
-
+        System.out.print("C(2,3,4) = ");  PowerA234(C);
+        System.out.print("D(2,3,4) = ");  PowerA234(D);
+        System.out.print("E(2,3,4) = ");  PowerA234(E);
     }
-
 }
