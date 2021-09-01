@@ -5,7 +5,7 @@ import java.util.List;
 import javax.security.sasl.SaslClient;
 import java.util.Scanner;
 
-public class Fun30 {
+public class FunSample30 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

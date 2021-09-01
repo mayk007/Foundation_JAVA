@@ -2,7 +2,7 @@ package Function;
 
 import java.util.Scanner;
 
-public class Fun3 {
+public class FunSample3 {
 
     public static void Mean(double a, double b){
 

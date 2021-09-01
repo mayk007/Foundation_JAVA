@@ -2,7 +2,7 @@ package Function;
 
 import java.util.Scanner;
 
-public class Fun2 {
+public class FunSample2 {
 
     static void PowerA234(double a){
       double A,B,C;
