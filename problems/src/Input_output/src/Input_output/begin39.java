@@ -26,7 +26,7 @@ public class begin39 {
             System.out.println("x1 = " + (-B) + " sqrt" + D + "/" + (2*A));
             System.out.println("x1 = " + (-B) + " sqrt" + -(D) + "/" + (2*A));
         } else {
-            System.out.print("\nX1 = "+ X1 + "\nX2 = "+ X2 );
+            System.out.printf("X1 = %.2f \nX2 = %.2f", X1, X2 );
         }
     }
 }
