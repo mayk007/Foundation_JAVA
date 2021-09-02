@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FunSimple30 {
     static int DigitN(int K, int N){
 
-        int count = 0, n = 0, temp = K;
+        int count = 0, n, temp = K;
 
         while (temp>0){
 
