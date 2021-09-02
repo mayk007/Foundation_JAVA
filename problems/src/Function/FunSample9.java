@@ -4,9 +4,21 @@ import java.util.Scanner;
 
 public class FunSample9 {
 
-    static void AddRightDigit(int K, int R){
+    static int AddLeftDigit(int K, int R){
 
-        System.out.println("Natija " + R + "" + K);
+        int a, b = K,  temp = 1, sum;
+
+        while (K>0){
+            a = K % 10;
+            K = K/10;
+            temp *=10;
+
+        }
+        sum = R * temp + b;
+
+
+        return sum;
+
     }
 
     public static void main(String[] args) {
@@ -18,6 +30,6 @@ public class FunSample9 {
         System.out.print("(1<=R<=9), R =  ");
         int R = sc.nextInt();
 
-        AddRightDigit(K,R);
+        System.out.println("Natija: " + AddLeftDigit(K,R));
     }
 }

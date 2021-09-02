@@ -4,37 +4,39 @@ import java.util.Scanner;
 
 public class FunSample10 {
 
-    static double PowerA3(double a) {
-        return Math.pow(a, 3);
+    static void Swap(int a, int b) {
+
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println(a + ", " + b);
+
     }
 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double A, B, C;
-        int D, E;
+        int A, B, C, D;
 
         System.out.print("A = ");
-        A = sc.nextDouble();
+        A = sc.nextInt();
 
         System.out.print("B = ");
-        B = sc.nextDouble();
+        B = sc.nextInt();
 
         System.out.print("C = ");
-        C = sc.nextDouble();
+        C = sc.nextInt();
 
         System.out.print("D = ");
         D = sc.nextInt();
 
-        System.out.print("E = ");
-        E = sc.nextInt();
+        System.out.print("(A,B) ");
+        Swap(A, B);
+        System.out.print("(C,D) ");
+        Swap(C, D);
 
-        System.out.println("A(3) darajasi = " + PowerA3(A));
-        System.out.println("B(3) darajasi = " + PowerA3(B));
-        System.out.println("C(3) darajasi = " + PowerA3(C));
-        System.out.println("D(3) darajasi = " + PowerA3(D));
-        System.out.println("E(3) darajasi = " + PowerA3(E));
 
     }
 }
