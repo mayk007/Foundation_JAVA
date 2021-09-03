@@ -3,18 +3,21 @@ package Function;
 import java.util.Scanner;
 
 public class FunSimple25 {
-    static boolean IsSquare(int K){
+    static boolean IsSquare(int K) {
 
         // 1-usul
         //double ildiz = Math.sqrt(K);
         //return (ildiz-Math.floor(ildiz) == 0);
 
 
-        for (int i = 1; i <K; i++) {
+        for (int i = 1; i < K; i++) {
 
-            if (i*i==K){
+            if (i * i == K) {
                 return true;
-            };
+            }
+            if (i * i > K){
+                break;
+            }
         }
         return false;
 

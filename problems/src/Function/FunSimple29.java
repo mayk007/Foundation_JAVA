@@ -13,7 +13,7 @@ public class FunSimple29 {
             K = K / 10;
             count++;
 
-            
+
         }
         return count;
     }
