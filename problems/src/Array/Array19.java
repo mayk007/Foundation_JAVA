@@ -17,7 +17,7 @@ public class Array19 {
     }
     public static void main(String[] args) {
 
-        int[] arr = new int[] {2,5,4,8,9,2,3,4,5,4};
+        int[] arr = new int[] {2,5,4,8,9,2,3,4,5,9};
 
         Arr(arr);
     }

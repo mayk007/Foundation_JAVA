@@ -1,21 +1,26 @@
 package Array;
 
 public class Array24 {
-    static void Arr(int[] arr) {
+    static int Arr(int[] arr) {
 
-        for (int i = 0; i < arr.length / 2; i+=2) {
-            System.out.println("A[" + (i) + "] = " + arr[i]);
-            System.out.println("A[" + (i) + "] = " + arr[i+1]);
+        int d = arr[1]-arr[0];
+        int D = 0;
 
-            System.out.println("A[" + (arr.length - 1 - i) + "] = " + arr[arr.length - 1 - i]);
-            System.out.println("A[" + (arr.length - 2 - i) + "] = " + arr[arr.length - 2 - i]);
+        for (int i = 1; i < arr.length; i++) {
 
+            D = arr[i] - arr[i-1];
+
+            if (D!=d){
+                return 0;
+            }
         }
+       return D;
     }
     public static void main(String[] args) {
 
-        int[] arr = new int[] {1,2,3,4,5,6,7,8,9,10};
+        int[] arr = new int[] {1, 3, 5, 7};
 
-        Arr(arr);
+        int MyArray = Arr(arr);
+        System.out.println("Natija: " + MyArray);
     }
 }
