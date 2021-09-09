@@ -3,7 +3,7 @@ package Array;
 public class Array28 {
     static void Arr(int[] arr) {
 
-        for (int i = 0; i < arr.length / 2; i+=2) {
+        for (int i = 0; i < arr.length; i+=2) {
             System.out.println("A[" + (i) + "] = " + arr[i]);
             System.out.println("A[" + (i) + "] = " + arr[i+1]);
 
