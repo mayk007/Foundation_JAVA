@@ -8,7 +8,7 @@ public class Array20 {
         L = arr.length - L;
         int sum = 0;
 
-        for (int i = K; i < arr.length - L; i++) {
+        for (int i = K+1; i < arr.length - L; i++) {
 
             sum += arr[i];
         }
@@ -17,7 +17,7 @@ public class Array20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] N = new int[] {1,2,3,4,5,6,7,8,9,10};
+        int[] N = new int[] {5,10,15,20,25};
 
         System.out.println("(0<=K<=L<N), N length = " + N.length);
         System.out.print("K = ");

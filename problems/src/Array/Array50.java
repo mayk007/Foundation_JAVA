@@ -1,21 +1,25 @@
 package Array;
 
+import java.util.Scanner;
+
 public class Array50 {
-    static void Arr(int[] arr) {
-
-        for (int i = 0; i < arr.length / 2; i+=2) {
-            System.out.println("A[" + (i) + "] = " + arr[i]);
-            System.out.println("A[" + (i) + "] = " + arr[i+1]);
-
-            System.out.println("A[" + (arr.length - 1 - i) + "] = " + arr[arr.length - 1 - i]);
-            System.out.println("A[" + (arr.length - 2 - i) + "] = " + arr[arr.length - 2 - i]);
-
-        }
-    }
     public static void main(String[] args) {
-
-        int[] arr = new int[] {1,2,3,4,5,6,7,8,9,10};
-
-        Arr(arr);
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = in.nextInt();
+        }
+        int max =-1;
+        int min = Integer.MAX_VALUE;
+        for (int i = 1; i < a.length-1; i++) {
+            if (a[i-1] < a[i] && a[i] > a[i+1]){
+                max = a[i];
+                if (min>max){
+                    min = max;
+                }
+            }
+        }
+        System.out.println(min);
     }
 }
