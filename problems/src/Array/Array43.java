@@ -1,21 +1,43 @@
 package Array;
 
+import java.util.Scanner;
+
 public class Array43 {
-    static void Arr(int[] arr) {
+    static int Arr(int[] arr) {
 
-        for (int i = 0; i < arr.length / 2; i+=2) {
-            System.out.println("A[" + (i) + "] = " + arr[i]);
-            System.out.println("A[" + (i) + "] = " + arr[i+1]);
+        int count = 1;
 
-            System.out.println("A[" + (arr.length - 1 - i) + "] = " + arr[arr.length - 1 - i]);
-            System.out.println("A[" + (arr.length - 2 - i) + "] = " + arr[arr.length - 2 - i]);
+        for (int i = 1; i < arr.length; i++) {
+            int j = 0;
+            for (j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    break;
+                }
+            }
+
+            if (i == j){
+                count++;
+            }
 
         }
+        return count;
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        int[] arr = new int[] {1,2,3,4,5,6,7,8,9,10};
+        System.out.print("Massiv elemntlari sonini kiriting (ex: 5 -> 5 ta elemeentdan iborat vector) = ");
+        int n = sc.nextInt();
 
-        Arr(arr);
-    }
+        int[] arr = new int[n];
+        System.out.println("Enter bilan " + n +" ta butun son kiriting!");
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+
+        int MyArray = Arr(arr);
+        System.out.println("Har xil elementlar soni: " + MyArray);
+
+  }
 }
