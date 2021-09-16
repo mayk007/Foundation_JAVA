@@ -3,18 +3,34 @@ package Array;
 import java.util.Scanner;
 
 public class Array35 {
-    static int Arr(int[] arr) {
+    static int LocalMax(int[] arr) {
 
-        int max = arr[1];
+        int local_max = -1;
 
+        for (int i = 1; i < arr.length - 1; i++) {
+
+            if (arr[i - 1] < arr[i] && arr[i] > arr[i + 1]) {
+                local_max = arr[i];
+                return MinOfLocalMax(arr, local_max);
+
+            }
+        }
+        return local_max;
+    }
+
+
+    static int MinOfLocalMax(int[] arr, int LocalMax) {
+
+        int min  = LocalMax;
         for (int i = 1; i < arr.length-1; i++) {
 
-            if (arr[i-1] < arr[i] && arr[i] > arr[i+1] && max > arr[i]){
-                max = arr[i];
+            if (arr[i-1] < arr[i] && arr[i] > arr[i+1] && min > arr[i]){
+                min = arr[i];
+
             }
 
         }
-        return max;
+        return min;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +45,7 @@ public class Array35 {
             arr[i] = sc.nextInt();
         }
 
-        int MyArray = Arr(arr);
+        int MyArray = LocalMax(arr);
         System.out.println();
         if (MyArray == -1){
             System.out.println("Local maximum mavjud emas: " + MyArray);

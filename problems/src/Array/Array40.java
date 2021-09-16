@@ -6,7 +6,7 @@ public class Array40 {
     static int Arr(int[] arr, int R) {
 
         int temp;
-        int near  = 99999999;
+        int near  = Math.abs(arr[0] - R);
         int r = 0;
 
         for (int i = 0; i < arr.length ; i++) {
