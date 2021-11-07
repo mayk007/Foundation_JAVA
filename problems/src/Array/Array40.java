@@ -31,13 +31,13 @@ public class Array40 {
     static int Arr(int[] arr, int R) {
 
         int temp;
-<<<<<<< HEAD
+
         int near  = Math.abs(arr[0] - R);
         int r = 0;
-=======
-        int r  = Integer.MAX_VALUE;
+
+        r  = Integer.MAX_VALUE;
         int nearnum = 0;
->>>>>>> 7d44bdd480ed9753a39ce97e95a3d650967cf7bc
+
 
         for (int i = 0; i < arr.length ; i++) {
             temp = Math.abs(arr[i] - R);
